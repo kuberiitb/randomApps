@@ -1,0 +1,9 @@
+  get text from source(twittet/copy from text etc)
+  get word count
+  remove commom words like a, the, no etc..
+  user need to have control of:
+    how many max words to use
+    how much min freq to use
+    remove some keywords
+  
+  
