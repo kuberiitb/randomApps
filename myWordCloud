@@ -7,5 +7,11 @@
     how much min freq to use
     remove some keywords
   
-  
-  
+  Some of the ideas have been implimented in the current app located at https://kuberiitb.shinyapps.io/myWordCloud/
+  Need to fix some bugs in it eg:
+    reduce margin in the image file
+    bring high freq words in centre for better representation
+    color high freq words in lite colors to improve overall beauty
+    rename image name, if possible give it a dynamic number say visit id or something like that
+    need to make the app lite, when lots of text is entered, its response time is late
+    add a help/user manual page
