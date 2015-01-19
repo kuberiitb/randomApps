@@ -1,9 +1,11 @@
-  get text from source(twittet/copy from text etc)
+  get text from source(twittet/youtube video/copy from text etc)
   get word count
   remove commom words like a, the, no etc..
-  user need to have control of:
+  define font and color of words(initial idea is frequency based)
+  give user the  control of:
     how many max words to use
     how much min freq to use
     remove some keywords
+  
   
   
