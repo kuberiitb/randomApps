@@ -120,9 +120,9 @@ solveSudoku(readPuzzle('01'))
 >>Solved in  8 iteratins.
 ```
 ## Improvements to be made
-This solution solves some of the problems(eg 01, 05..) but not all. 
+This code solves some of the problems(eg 01, 05..) but not all. 
 
-It stucks at point when no cell is left with unique option left and one need to try one of the option to proceed further.
+It stucks at point when no cell is left with unique option and one need to try one of the options to proceed further.
 
 I will fix the bug and update the code soon.
 
