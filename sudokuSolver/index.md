@@ -121,6 +121,9 @@ solveSudoku(readPuzzle('01'))
 ```
 ## Improvements to be made
 This solution solves some of the problems(eg 01, 05..) but not all. 
+
 It stucks at point when no cell is left with unique option left and one need to try one of the option to proceed further.
-I will try to fix the bug and update the code soon.
-Till now, Tell me how may of the 50 this code could solve(Don't run a loop, OK?)
+
+I will fix the bug and update the code soon.
+
+Till then, Tell me how, may of the 50 puzzles, this code could solve(Don't run a loop, OK?)
