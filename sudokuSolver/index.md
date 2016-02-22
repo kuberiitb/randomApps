@@ -74,7 +74,7 @@ solveSudoku<-function(mat){
   solvable = 1
   while(solvable>0){
     iteratins = iteratins + 1
-    cat(paste("Iteratin:", iteratins))
+    cat(paste("Iteratin:", iteratins, "\n"))
     solvable=0
     Sys.sleep(1)
     
@@ -99,10 +99,10 @@ solveSudoku<-function(mat){
   }
   if(solvable==0){
     if(min(mat)){
-      cat(paste("Solved in ", iteratins, "iteratins."))
+      cat(paste("Solved in ", iteratins, "iteratins.", "\n"))
       }
     else{
-      cat(paste("Could Not Solve in",iteratins, "iteratins"))
+      cat(paste("Could Not Solve in",iteratins, "iteratins", "\n"))
       }
 }
 return(mat)
@@ -112,10 +112,12 @@ return(mat)
 *Test it on any puzzle
 ```{R}
 solveSudoku(pm)
+>>Solved in  8 iteratins.
 ```
 *Or any other puzzle with given id (01 - 50)
 ```{R}
 solveSudoku(readPuzzle('01'))
+>>Solved in  8 iteratins.
 ```
 ## Improvements to be made
 This solution solves some of the problems(eg 01, 05..) but not all. 
