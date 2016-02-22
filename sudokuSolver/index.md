@@ -1,4 +1,4 @@
-## Objective: Solve a sudoku Puzzle in R
+## Objective: Solve a sudoku Puzzle in R(beta)
 
 Puzzle in text form has been obtained from [projecteuler](https://projecteuler.net/project/resources/p096_sudoku.txt)
 
