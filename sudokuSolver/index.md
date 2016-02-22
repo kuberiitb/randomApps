@@ -126,4 +126,4 @@ It stucks at point when no cell is left with unique option and one need to try o
 
 I will fix the bug and update the code soon.
 
-Till then, Tell me how, may of the 50 puzzles, this code could solve(Don't run a loop, OK?)
+Till then, Tell me how may, of the 50 puzzles, this code could solve(Don't run a loop, OK?)
