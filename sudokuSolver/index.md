@@ -137,14 +137,14 @@ return(mat)
 }
 ```
 
-*Test it on any puzzle
+* Test it on any puzzle
 ```{R}
 sol = solveSudoku(pm)
 >>Solved in  8 iteratins.
 checkSudoku(sol)
 >>TRUE
 ```
-*Or any other puzzle with given id (01 - 50)
+* Or any other puzzle with given id (01 - 50)
 ```{R}
 sol = solveSudoku(readPuzzle('01'))
 >>Solved in  8 iteratins.
