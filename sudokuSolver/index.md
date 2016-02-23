@@ -10,7 +10,7 @@ Puzzle in text form has been obtained from [projecteuler](https://projecteuler.n
 # given puzzleid, read puzzle from file downloaded from projecteuler file
 readPuzzle<-function(puzzleid='01'){
   #read a puzzle
-  pfile = readLines('C:\\Users\\Kuber Churasiya\\Downloads\\temp\\sudoku\\p096_sudoku.txt')
+  pfile = readLines('p096_sudoku.txt')
   copy = 0
   puzzletext = character()
   for(line in pfile){
