@@ -139,13 +139,17 @@ return(mat)
 
 *Test it on any puzzle
 ```{R}
-solveSudoku(pm)
+sol = solveSudoku(pm)
 >>Solved in  8 iteratins.
+checkSudoku(sol)
+>>TRUE
 ```
 *Or any other puzzle with given id (01 - 50)
 ```{R}
-solveSudoku(readPuzzle('01'))
+sol = solveSudoku(readPuzzle('01'))
 >>Solved in  8 iteratins.
+checkSudoku(sol)
+>>TRUE
 ```
 ## Improvements to be made
 This code solves some of the problems(eg 01, 05..) but not all. 
