@@ -1,6 +1,5 @@
----
-title: "Solving a sudoku Puzzle in R(beta)"
----
+# Solving a sudoku Puzzle in R(beta)
+
 ## Basics
 
 Puzzle in text form has been obtained from [projecteuler](https://projecteuler.net/project/resources/p096_sudoku.txt)
