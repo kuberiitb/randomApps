@@ -65,6 +65,34 @@ checkOptions <- function(mat, row, col){
 checkOptions(pm,1,2)
 ```
 
+```{R}
+# checks if the given sudoku is complete and correct
+checkSudoku<-function(mat){
+  dimCheck = all(dim(mat) == c(9,9))
+  rowCheck = 0
+  for(row in 1:9){
+    if( all(sort(mat[row,]) == 1:9) )
+      rowCheck = rowCheck + 1
+  }
+  colCheck = 0
+  for(col in 1:9){
+    if( sum(sort(mat[,col]) == 1:9) )
+      colCheck = colCheck + 1
+  }
+  blockCheck = 0
+  for(i in seq(1,9,3)){
+    for(j in seq(1,9,3) ){
+      if( all(sort(array(getBlock(pm, i, j )))==1:9) )
+        blockCheck = blockCheck + 1
+    }
+  }  
+  
+  print(c(dimCheck, rowCheck==9, colCheck==9, blockCheck==9))
+  return(all(dimCheck, rowCheck==9, colCheck==9, blockCheck==9))
+}
+checkSudoku(pm)
+```
+
 ##Finally, Main function
 
 ```{R}
