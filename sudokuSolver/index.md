@@ -1,8 +1,12 @@
-## Objective: Solve a sudoku Puzzle in R(beta)
+---
+title: "Solving a sudoku Puzzle in R(beta)"
+---
+## Basics
 
 Puzzle in text form has been obtained from [projecteuler](https://projecteuler.net/project/resources/p096_sudoku.txt)
 
 * Read puzzle
+
 ```{R}
 # given puzzleid, read puzzle from file downloaded from projecteuler file
 readPuzzle<-function(puzzleid='01'){
@@ -40,6 +44,7 @@ print(pm)
 ```
 
 * Define some functions to be used later
+
 ```{R}
 # return the 3x3 sub-block for given sudoku and index
 getBlock<-function(mat, i,j){
@@ -96,7 +101,6 @@ checkSudoku(pm)
 ##Finally, Main function
 
 ```{R}
-
 solveSudoku<-function(mat){
   iteratins = 0
   solvable = 1
@@ -138,6 +142,7 @@ return(mat)
 ```
 
 * Test it on any puzzle
+
 ```{R}
 sol = solveSudoku(pm)
 >>Solved in  8 iteratins.
@@ -145,6 +150,7 @@ checkSudoku(sol)
 >>TRUE
 ```
 * Or any other puzzle with given id (01 - 50)
+
 ```{R}
 sol = solveSudoku(readPuzzle('01'))
 >>Solved in  8 iteratins.
