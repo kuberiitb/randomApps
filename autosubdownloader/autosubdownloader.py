@@ -13,7 +13,7 @@ Input format:
 Example:
 	* python autosubdownloader.py Horrible.Bosses.2.2014.1080p.BluRay.x264.YIFY.mp4
 Bug(s):
-subscene may not givecorrect subtitle at first rank. Need to select the correct subtitle before downloading
+subscene may not givecorrect subtitle at first rank. Need to select the correct subtitle before/downloading
 
 '''
 
@@ -103,16 +103,21 @@ def subscene(tableRows):
 		if downloaded > 0:
 			return 0
 		cell = tableRow.find('td', {'class':'a1'})
-		#printing(cell)
 		if cell is None:
 			continue
-		#return 0
-		lang= str(cell.find('span', {'class':'l r neutral-icon'}).text.strip())
+		#printing(cell)
+		try:
+			lang= str(cell.find('span', {'class':'l r neutral-icon'}).text.strip())
+		except:
+			try:
+				lang= str(cell.find('span', {'class':'l r positive-icon'}).text.strip())
+			except:
+				continue
+		
 		#printing(lang)
 		if lang== 'English':
 			link = 'http://www.subscene.com' + cell.find('a').get('href')
 			printing("Trying " + link)
-			# http://subscene.com/subtitles/suits-fifth-season/english/1288979
 			downloadSoup = crawl(link, 'subscene', 1)
 			downloadLink = 'http://subscene.com' + downloadSoup.find('div',{'class','download'}).find('a').get('href')
 			#put exception here
