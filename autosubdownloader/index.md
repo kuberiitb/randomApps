@@ -15,3 +15,6 @@ and in use any directory like
 ```{sh}
 subd Horrible.Bosses.2.2014.1080p.BluRay.x264.YIFY.mp4
 ```
+
+## Code
+Click [Here](https://github.com/kuberiitb/randomApps/blob/master/autosubdownloader/autosubdownloader.py) for the code and other details.
