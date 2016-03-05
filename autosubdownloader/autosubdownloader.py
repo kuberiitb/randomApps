@@ -13,7 +13,7 @@ Input format:
 Example:
 	* python autosubdownloader.py Horrible.Bosses.2.2014.1080p.BluRay.x264.YIFY.mp4
 Bug(s):
-subscene may not givecorrect subtitle at first rank. Need to select the correct subtitle before/downloading
+subscene may not givecorrect subtitle at first rank. Need to select the correct subtitle before downloading
 
 '''
 
